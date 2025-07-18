@@ -1,0 +1,2 @@
+require("dipxsy")
+print("Hello")
