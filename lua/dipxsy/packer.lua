@@ -58,9 +58,15 @@ return require('packer').startup(function(use)
   use {
   'vyfor/cord.nvim',
   run = ':Cord update',
-  -- config = function()
-  --   require('cord').setup {}
-  -- end
+  config = function()
+    require('cord').setup {}
+  end
+}
+use {
+  "alex-popov-tech/store.nvim",
+  config = function()
+    require('store').setup {}
+  end
 }
 end)
 
