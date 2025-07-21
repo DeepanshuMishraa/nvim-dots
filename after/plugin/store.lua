@@ -17,12 +17,12 @@ require("store").setup({
 
   -- Keybindings
   keybindings = {
-    help = "?",             -- Show help
-    close = "q",            -- Close modal
-    filter = "f",           -- Open filter input
-    refresh = "r",          -- Refresh data
-    open = "<cr>",          -- Open selected repository
-    switch_focus = "<tab>", -- Switch focus between panes
+    help = { "?" },             -- Show help
+    close = { "q" },            -- Close modal
+    filter = { "f" },           -- Open filter input
+    refresh = { "r" },          -- Refresh data
+    open = { "<cr>" },          -- Open selected repository
+    switch_focus = { "<tab>" }, -- Switch focus between panes
   },
 
   -- Behavior
