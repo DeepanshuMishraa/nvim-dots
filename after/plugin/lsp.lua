@@ -32,6 +32,11 @@ require('mason-lspconfig').setup({
       local lua_opts = lsp.nvim_lua_ls()
       require('lspconfig').lua_ls.setup(lua_opts)
     end,
+    tsserver = function()
+      require('lspconfig').tsserver.setup({
+        filetypes = { "typescript", "typescriptreact", "javascript", "javascriptreact" }
+      })
+    end,
   }
 })
 
@@ -59,9 +64,9 @@ cmp.setup({
     end
   },
   mapping = cmp.mapping.preset.insert({
-    ['<C-p>'] = cmp.mapping.select_prev_item(cmp_select),
-    ['<C-n>'] = cmp.mapping.select_next_item(cmp_select),
-    ['<C-y>'] = cmp.mapping.confirm({ select = true }),
+    ['<Up>'] = cmp.mapping.select_prev_item(cmp_select),
+    ['<Down>'] = cmp.mapping.select_next_item(cmp_select),
+    ['<CR>'] = cmp.mapping.confirm({ select = true }),
     ['<C-Space>'] = cmp.mapping.complete(),
   }),
 })
