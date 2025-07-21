@@ -109,6 +109,11 @@ _G.packer_plugins = {
     path = "/home/dipxsy/.local/share/nvim/site/pack/packer/start/copilot.vim",
     url = "https://github.com/github/copilot.vim"
   },
+  ["cord.nvim"] = {
+    loaded = true,
+    path = "/home/dipxsy/.local/share/nvim/site/pack/packer/start/cord.nvim",
+    url = "https://github.com/vyfor/cord.nvim"
+  },
   ["friendly-snippets"] = {
     loaded = true,
     path = "/home/dipxsy/.local/share/nvim/site/pack/packer/start/friendly-snippets",

@@ -55,5 +55,12 @@ return require('packer').startup(function(use)
       require('nvim-autopairs').setup({})
     end
   }
+  use {
+  'vyfor/cord.nvim',
+  run = ':Cord update',
+  -- config = function()
+  --   require('cord').setup {}
+  -- end
+}
 end)
 
