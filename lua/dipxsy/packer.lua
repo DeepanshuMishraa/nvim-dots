@@ -48,13 +48,10 @@ return require('packer').startup(function(use)
 	  }
   }
   use('github/copilot.vim')
+  use('b0o/schemastore.nvim')
   use 'wakatime/vim-wakatime'
-  use {
-    'windwp/nvim-autopairs',
-    config = function()
-      require('nvim-autopairs').setup({})
-    end
-  }
+  use 'windwp/nvim-autopairs'
+  use 'windwp/nvim-ts-autotag'
   use {
   'vyfor/cord.nvim',
   run = ':Cord update',

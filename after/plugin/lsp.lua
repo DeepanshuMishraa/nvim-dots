@@ -24,7 +24,8 @@ require('mason-lspconfig').setup({
     'solargraph',
     'gopls',
     'html',
-    'cssls'
+    'cssls',
+    'jsonls'
   },
   handlers = {
     lsp.default_setup,
@@ -35,6 +36,16 @@ require('mason-lspconfig').setup({
     tsserver = function()
       require('lspconfig').tsserver.setup({
         filetypes = { "typescript", "typescriptreact", "javascript", "javascriptreact" }
+      })
+    end,
+    jsonls = function()
+      require('lspconfig').jsonls.setup({
+        settings = {
+          json = {
+            schemas = require('schemastore').json.schemas(),
+            validate = { enable = true },
+          },
+        },
       })
     end,
   }
