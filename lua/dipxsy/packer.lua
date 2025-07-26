@@ -59,6 +59,7 @@ return require('packer').startup(function(use)
     require('cord').setup {}
   end
 }
+use('jose-elias-alvarez/null-ls.nvim')
 use {
   "alex-popov-tech/store.nvim",
   config = function()
