@@ -1,7 +1,7 @@
 require("store").setup({
   -- Window dimensions (percentages or absolute)
-  width = 0.8,
-  height = 0.8,
+  width = math.max(85, math.floor(vim.o.columns * 0.8)),
+  height = math.max(18, math.floor(vim.o.lines * 0.8)),
 
   -- Layout proportions (must sum to 1.0)
   proportions = {
