@@ -66,5 +66,6 @@ use {
     require('store').setup {}
   end
 }
+
 end)
 
